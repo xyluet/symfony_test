@@ -1,0 +1,35 @@
+#!/usr/bin/env php
+<?php
+
+// require_once __DIR__ . '/vendor/autoload_runtime.php';
+
+function main() {
+  
+}
+
+main();
+
+
+// return static function (array $context) {
+//   return function() {
+    
+//     class Foo
+//     {
+//     }
+
+//     $foo = new Foo();
+//     print_r($foo);
+//   };
+//   // class Foo
+//   // {
+//   //   public function run()
+//   //   {
+//   //     echo "run";
+//   //   }
+//   //   // $foo = new Foo();
+//   //   // return $foo;
+//   // }
+
+//   // return new Foo();
+//   // die(print_r($context['APP_ENV']));
+// };
