@@ -7,17 +7,15 @@ doctrine:
     #server_version: '15'
   orm:
     auto_generate_proxy_classes: true
-    enable_lazy_ghost_objects: true
     naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
     auto_mapping: true
     mappings:
       App:
         is_bundle: false
-        # dir: "%kernel.project_dir%/src/Entity"
-        dir: "%kernel.project_dir%/config/doctrine"
+        type: attribute
+        dir: "%kernel.project_dir%/src/Entity"
         prefix: 'MyApp\Entity'
-        alias: App
-        type: xml
+        alias: MyApp
 
 when@test:
   doctrine:

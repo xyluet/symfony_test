@@ -1,0 +1,14 @@
+controllers:
+  resource:
+    path: ../src/Controller/
+    namespace: MyApp\Controller
+  type: attribute
+
+# blog_list:
+#     path: /product
+#     # the controller value has the format 'controller_class::method_name'
+#     controller: MyApp\Controller\ProductController::index
+
+# app_lucky_number:
+#   path: /blog
+#   controller: App\Controller\BlogController::list
