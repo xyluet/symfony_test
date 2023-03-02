@@ -23,6 +23,11 @@ class Product
     #[ORM\Column(type: Types::TEXT)]
     private ?string $decription = null;
 
+    #[ORM\ManyToOne(inversedBy: 'products')]
+    #[ORM\JoinColumn(nullable: true)]
+
+    private ?Category $category = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -60,6 +65,18 @@ class Product
     public function setDecription(string $decription): self
     {
         $this->decription = $decription;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }
